@@ -1,0 +1,280 @@
+*{
+	margin: 0 ;
+	padding: 0;
+}
+.hide{
+	display: none;
+}
+.box{
+	width: 1200px;
+	height: 600px;
+	background: #fffbde ;
+	margin: 50px auto;
+	border: 4px solid #231f20;
+	border-radius: 10px;
+	text-align: center;
+}
+.box_link .notic{
+	font-size: 22px;
+	color: #a92890;
+	margin-bottom: 20px;
+}
+.box_link img{
+	margin: 20px auto;
+	display: block;
+}
+.box_link .box .btn{
+	width: 365px;
+	padding: 14px 12px 15px 12px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	color: #fffbde;
+	border-radius: 10px;
+    font-size: 22px;
+    background-color: #44c7f5;
+    text-decoration: none;
+    border: 4px solid #000;
+    margin-top: 400px;
+}
+.box_link ul{
+	margin: 0 auto;
+}
+.box_link .mobile{
+	list-style: none;
+	margin: 0 10px;
+	display: inline-block;
+	width: 52px;
+	height: 84px;
+	border-radius: 5px;
+	border: 2px solid #231f20;
+	opacity: 0.6;
+}
+@keyframes updown {
+    0% {
+        transform: translate3D(0 , 0 , 0);
+    }
+    50% {
+       transform: translate3D(0 ,  -5px , 0);
+    }
+    100% {
+        transform: translate3D(0 , 0px , 0);
+    }
+}
+.box_link .mobile.link{
+	opacity: 1;
+}
+.box_link .mobile.link.getin{
+	animation:updown .8s ease-out forwards infinite;
+}
+.box_link .mobile.red{
+	background: red;
+}
+.box_link .mobile.yellow{
+	background: #f1d005;
+}
+
+.box_link .mobile.blue{
+	background: #2276eb;
+}
+
+.box_link .mobile.orange{
+	background: #f59b04;
+}
+
+.box_link .mobile .top{
+	margin: 5px auto;
+	border-radius: 2px;
+	width: 10px;
+	border: 2px solid #231f20;
+}
+
+.box_link .mobile .center{
+	margin: 5px auto;
+	border-radius: 2px;
+	width: 40px;
+	height: 50px;
+	background: #fff;
+	line-height: 30px;
+	font-weight: bold;
+	color: #fff;
+	border: 2px solid #231f20;
+}
+.box_link .mobile.link .center{
+	color: #000;
+	background: #fff url(../img/ok.png) 50% 28px no-repeat;
+}
+
+.box_link .mobile .bottom{
+	margin: 5px auto;
+	border-radius: 2px;
+	width: 10px;
+	height: 2px;
+	background: #fff;
+	border: 2px solid #231f20;
+}
+
+
+
+
+
+.box_head{
+	padding-top: 20px;
+}
+
+.box_head .con{
+	width: 644px;
+	margin: 100px auto;
+	text-align: left;
+}
+.box_head li{
+	position: relative;
+	margin: 0 20px 20px;
+	width: 52px;
+	height: 88px;
+	list-style: none;
+	display: inline-block;
+}
+
+.box_head .img{
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	left: 50%;
+	margin-left: -18px;
+	top: 50%;
+	margin-top: -18px;
+	z-index: 2;
+}
+
+.box_head .mobile{
+	position: absolute;
+	left: 50%;
+	margin-left: -28px;
+	z-index: 1;
+	width: 52px;
+	height: 84px;
+	border-radius: 5px;
+	border: 2px solid #231f20;
+	background: red;
+	display: none;
+}
+.avatar-con .orange .mobile{
+	display: block;
+	background: #f59b04;
+}
+.avatar-con .red .mobile{
+	display: block;
+	background: red;
+}
+.avatar-con .yellow .mobile{
+	display: block;
+	background: #f1d005;
+}
+.avatar-con .blue .mobile{
+	display: block;
+	background: #2276eb;
+}
+.box_link .mobile.red{
+	background: red;
+}
+
+.box_head .active .mobile{
+	display: block;
+}
+
+.box_head .mobile .top{
+	margin: 5px auto;
+	border-radius: 2px;
+	width: 10px;
+	border: 2px solid #231f20;
+}
+
+.box_head .mobile .center{
+	margin: 5px auto;
+	border-radius: 2px;
+	width: 40px;
+	height: 50px;
+	background: #fff;
+	color: #fff;
+	border: 2px solid #231f20;
+}
+
+.box_head .mobile .bottom{
+	margin: 5px auto;
+	border-radius: 2px;
+	width: 10px;
+	height: 2px;
+	background: #fff;
+	border: 2px solid #231f20;
+}
+
+
+.run-con{
+	width: 1000px;
+	height: 560px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.game-result{
+	padding: 20px 0 50px;
+	background: url('../img/r_bg.png') center -400px;
+}
+.game-result .result-con{
+	position: relative;
+	width: 900px;
+	height: 500px;
+	margin: 0 auto;
+}
+.game-result .rank{
+	position: absolute;
+	width: 100px;
+	text-align: center;
+}
+.game-result .rank1{
+	left: 370px;
+	top: 70px;
+}
+.game-result .rank2{
+	left: 190px;
+	top: 140px;
+}
+.game-result .rank3{
+	left: 560px;
+	top: 170px;
+}
+.game-result .rank img{
+	display: block;
+	margin: 0 auto 5px;
+}
+.game-result .back-home{
+	  display: block;
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    background: #d5a41f;
+    line-height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

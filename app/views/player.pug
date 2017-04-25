@@ -1,0 +1,86 @@
+doctype 5
+html
+  head
+    meta(charset='utf-8')
+    link(rel='dns-prefetch', href='//s1.mi.com')
+    link(rel='dns-prefetch', href='//img01.mifile.cn')
+    link(rel='dns-prefetch', href='//img03.mifile.cn')
+    link(rel='dns-prefetch', href='//img08.mifile.cn')
+    link(rel='dns-prefetch', href='//hd.mi.com')
+    title 小米商城
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+    meta(name='renderer', content='webkit')
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, minimal-ui')
+    meta(name='imagemode', content='force')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    meta(name='format-detection', content='telephone=no')
+    meta(http-equiv='pragma', content='no-cache')
+    meta(name='description', content='手机版小米商城客户端可以随时随地参与预约抢购小米手机，轻松下单购买，实时查询订单信息掌握物流状态，小米商城app手机客户端还有新品信息通知推送功能，所有商品信息随身掌握。')
+    meta(name='keywords', content='小米商城,小米手机,小米商城下载,小米商城app')
+    link(rel='shortcut icon', type='image/x-icon', href='/favicon.ico')
+    link(rel='apple-touch-icon-precomposed', href='//img01.mifile.cn/m/app/touch-icon.png')
+    title= title
+    link(rel="stylesheet", href="/css/player.css")
+    script.
+      (function(win) {
+        var doc = win.document,
+          html = doc.documentElement;
+        var baseWidth = 720,
+          grids = baseWidth / 100,
+          resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+          recalc = function() {
+            var clientWidth = html.clientWidth || 320;
+            if (clientWidth > 720) {
+              clientWidth = 720
+            };
+            html.style.fontSize = clientWidth / grids + 'px';
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', function() {
+          setTimeout(recalc)
+        }, false);
+      })(window);
+      window.Tracker = {
+        events: [],
+        push: function(o) {
+          this.events.push(o)
+        }
+      };
+
+  body
+    div#loading.loading 
+      img(src="/img/loading.gif")
+    div#part1.part1
+      .inner-box
+        #ready.ready 开启游戏
+        //- #player.player.ready 玩家
+        p.waiting-info 等待其他玩家加入...
+        //- hr
+    div#part2.part2
+      .avatar-box
+        img#avatar.avatar(src="")
+        #choose-btn.choose-btn 确认
+        #start-btn.choose-btn.start-btn 开始游戏
+        #waiting-btn.waiting-btn 等待房主开启游戏...
+      .button-box
+        img#up.up(src="/img/arrow.jpeg")
+        img#down.down(src="/img/arrow.jpeg")
+        img#left.left(src="/img/arrow.jpeg")
+        img#right.right(src="/img/arrow.jpeg")
+        //- button#up.up up
+        //- button#down.down down
+        //- button#left.left left
+        //- button#right.right right
+    div#part3.part3
+      .arrow-box
+        img.arrow.swipe-left(src="/img/track_arrow.png")
+        img.arrow.swipe-right(src="/img/track_arrow.png")
+    div#part4.part4
+      img#result-avatar.avatar(src="")
+      p#rank.rank
+    script(src="/js/lib/socket.io.js")
+    script(src="/js/lib/jquery-3.2.1.min.js")
+    script(src="/js/player.js")
+    script(src="/js/lib/jquery.touchSwipe.min.js")

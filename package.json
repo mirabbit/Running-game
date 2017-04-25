@@ -1,0 +1,23 @@
+{
+  "name": "running",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "supervisor server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "ip": "^1.1.5",
+    "pug": "^2.0.0-beta.12",
+    "qrcode": "^0.8.1",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "debug": "^2.6.4",
+    "supervisor": "^0.12.0"
+  }
+}

@@ -1,0 +1,55 @@
+doctype 5
+html
+  head
+    meta(charset="utf-8")
+    title= title
+    link(rel="stylesheet", href="/css/room.css")
+  body
+    div(class="box box_link")
+      img(src=qrCode)
+      a(href=enterUrl target="_blank") 点击打开链接
+
+      p.notic 或扫一扫链接设备
+      ul
+        li.mobile.red
+          div.top
+          div.center ok
+          div.bottom
+        li.mobile.blue
+          div.top
+          div.center ok
+          div.bottom
+        li.mobile.yellow
+          div.top
+          div.center ok
+          div.bottom
+        li.mobile.orange
+          div.top
+          div.center ok
+          div.bottom
+
+    div(class="box box_head hide avatar-con")
+      h2 选择头像
+      ul.con#J_wrap
+        - for (var i = 1; i < 22; i++)
+          li
+              div.mobile
+                div.top
+                div.center
+                div.bottom
+              div.img(style="background: url(/img/"+i+".png) 50% 50% no-repeat;background-size: 36px 36px;")
+    div(class="game-main hide")
+      div.run-con
+        canvas#run-canvas
+      div(class="runway")
+    div(class="game-result hide J_result")
+      div.result-con
+      a(href="/" class="back-home") 重新开始
+
+    script(src="/js/lib/socket.io.js")
+    script(src="/js/lib/jquery-3.2.1.min.js")
+    script(src="/js/lib/easeljs-0.8.2.min.js")
+    script(src="/js/lib/preloadjs-NEXT.min.js")
+    script(src="/js/lib/tweenjs-0.6.2.min.js")
+    script(src="/js/room.js")
+

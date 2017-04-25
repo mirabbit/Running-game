@@ -1,0 +1,23 @@
+*{
+	margin: 0 ;
+	padding: 0;
+}
+
+.box{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+	height: 760px;
+  padding-top: 20px;
+	background: #befde8 url(../img/index_bg.jpg) center bottom no-repeat;
+	margin: -380px auto 0;
+	border: 4px solid #231f20;
+	border-radius: 10px;
+}
+.box .btn {
+	width: 380px;
+  height: 97px;
+	display: block;
+	margin: 530px auto 0;
+  background: url(../img/btn.png) center center no-repeat;
+}
