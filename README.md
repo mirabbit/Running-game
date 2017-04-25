@@ -16,7 +16,7 @@ npm run dev
 
 ## 截屏
 
-
+![](https://github.com/mirabbit/Running-game/blob/master/screenshots/race.png)
 
 ## 参与同学（排名不分前后）
 
